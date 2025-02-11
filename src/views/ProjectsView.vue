@@ -3,9 +3,9 @@
 
 <template>
   <main>
-    <h1>Welcome Home</h1>
-    <RouterLink to="/projects">
-      Projects
+    <h1>Welcome Projects</h1>
+    <RouterLink to="/">
+      Home
     </RouterLink>
   </main>
 </template>
