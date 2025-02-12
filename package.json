@@ -11,7 +11,13 @@
     "type-check": "vue-tsc --build",
     "lint:oxlint": "oxlint . --fix -D correctness --ignore-path .gitignore",
     "lint:eslint": "eslint . --fix",
-    "lint": "run-s lint:*"
+    "lint": "run-s lint:*",
+    "supabase:init": "supabase init",
+    "supabase:login": "supabase login",
+    "supabase:link": "supabase link --project-ref karcucaqmuguvveazpnx",
+    "db:migrate:new": "supabase migration new projects-schema",
+    "db:reset": "supabase db reset --linked",
+    "db:seed": "node --env-file=.env database/seed.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.48.1",
@@ -20,6 +26,7 @@
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
+    "@faker-js/faker": "^9.5.0",
     "@tsconfig/node22": "^22.0.0",
     "@types/node": "^22.13.1",
     "@vitejs/plugin-vue": "^5.2.1",
@@ -31,6 +38,7 @@
     "jiti": "^2.4.2",
     "npm-run-all2": "^7.0.2",
     "oxlint": "^0.15.6",
+    "supabase": "^2.12.1",
     "typescript": "~5.7.3",
     "unplugin-vue-router": "^0.11.2",
     "vite": "^6.0.11",
