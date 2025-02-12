@@ -1,8 +1,11 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
+import { supabase } from '@/lib/supabaseClient';
+
 </script>
 
 <template>
-  <h1>Welcome to pulse</h1>
-<!--  <RouterView/>-->
+  <main>
+    <RouterView/>
+  </main>
 </template>
