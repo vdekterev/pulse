@@ -4,7 +4,7 @@
 <template>
   <main>
     <h1>Welcome Home</h1>
-    <RouterLink to="/projects">
+    <RouterLink :to="{ name: '/projects/' }">
       Projects
     </RouterLink>
   </main>

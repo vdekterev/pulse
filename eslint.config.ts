@@ -1,4 +1,4 @@
-import pluginVue from 'eslint-plugin-vue'
+import pluginVue, {rules} from 'eslint-plugin-vue'
 import { defineConfigWithVueTs, vueTsConfigs } from '@vue/eslint-config-typescript'
 import oxlint from 'eslint-plugin-oxlint'
 
