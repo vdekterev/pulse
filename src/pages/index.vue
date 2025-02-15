@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { Button } from '@/components/ui/button'
 </script>
 
 <template>
@@ -7,5 +8,8 @@
     <RouterLink :to="{ name: '/projects/' }">
       Projects
     </RouterLink>
+    <Button>
+      Click me
+    </Button>
   </main>
 </template>
